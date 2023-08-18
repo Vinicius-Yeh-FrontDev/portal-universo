@@ -1,0 +1,37 @@
+.carousel-container {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.carousel-container button {
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+#prevBtn {
+    left: 10px;
+}
+#nextBtn {
+    right: 10px;
+}
+.carousel-container button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
